@@ -12,11 +12,9 @@ const SECRET_KEY="2919";
 const API_KEY="c2b1dadcc33f40719204fc9248111fdb";
 const EMAIL_USER="sowndarraj272@gmail.com";
 const EMAIL_PASS="ymvbmqeydwfzlelw";
+const MONGO_URL="mongodb://localhost:27017/login_users";
 
-mongoose.connect("mongodb://localhost:27017/login_users",{
-    useNewUrlParser:true,
-    useUnifiedTopology: true,
-})
+mongoose.connect(MONGO_URL)
 .then(()=>console.log("MongoDB Connected"))
 .catch((err)=>console.log("MongoDB Connection Error",err))
 
