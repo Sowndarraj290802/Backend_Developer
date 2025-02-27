@@ -49,9 +49,9 @@ const authenticate=(req,res,next)=>{
 }
 
 app.post('/api/register',async(req,res)=>{
+    try{
     const{name,email,password}=req.body;
     const hashedpassword=await bcrypt.hash(password,10);
-    try{
         const user=new User({name,email,password:hashedpassword,subscribedCategories:[]});
         await user.save();
         res.status(201).json({message:"User registered succesfully",

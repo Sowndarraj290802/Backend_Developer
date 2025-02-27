@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "0c78ef55-f566-4b4f-be70-2c3300c7b4a8",
+		"name": "Backend_subscription",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42636083"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"zxcvbn\",\r\n    \"email\":\"zxcvbn@gmail.com\",\r\n    \"password\":\"987654321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"zxcvbn@gmail.com\",\r\n    \"password\":\"987654321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscribe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2MwOTM1ZGZjYTMzZTRiMzhkNDhkOGMiLCJpYXQiOjE3NDA2NzQwMDcsImV4cCI6MTc0MDY3NzYwN30.gna2ytI0m8mSQJ2Fg-wG2NE9NZxbT3fRN_R134IXlPI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categories\":[\"technology\",\"sports\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/subscribe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unsubscribe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2MwOTM1ZGZjYTMzZTRiMzhkNDhkOGMiLCJpYXQiOjE3NDA2NzQwMDcsImV4cCI6MTc0MDY3NzYwN30.gna2ytI0m8mSQJ2Fg-wG2NE9NZxbT3fRN_R134IXlPI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categories\":[\"sports\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/unsubscribe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"unsubscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "personalized",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2MwOTM1ZGZjYTMzZTRiMzhkNDhkOGMiLCJpYXQiOjE3NDA2NzQwMDcsImV4cCI6MTc0MDY3NzYwN30.gna2ytI0m8mSQJ2Fg-wG2NE9NZxbT3fRN_R134IXlPI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/personalized",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personalized"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
