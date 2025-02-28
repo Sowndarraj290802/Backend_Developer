@@ -32,7 +32,14 @@
 					]
 				}
 			},
-			"response": []
+			"response": {
+				"message":"User registered successfully",
+				"user":{
+					"id":"67c0935dfca33e4b38d48d8c",
+					"name":"zxcvbn",
+					"email":"zxcvbn@gmail.com"
+				}
+			}
 		},
 		{
 			"name": "login",
@@ -60,7 +67,15 @@
 					]
 				}
 			},
-			"response": []
+			"response": {
+				"message":"Login Successful",
+				"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2MwOTM1ZGZjYTMzZTRiMzhkNDhkOGMiLCJpYXQiOjE3NDA3MTgzNjksImV4cCI6MTc0MDcyMTk2OX0.-fZyoEW8_VBIl0TbgtnHNZSH_IOLfy4crjvU8n--K0Y"
+				"user":{
+					"id":"67c0935dfca33e4b38d48d8c",
+					"name":"zxcvbn",
+					"email":"zxcvbn@gmail.com"
+				}
+			}
 		},
 		{
 			"name": "subscribe",
@@ -94,7 +109,13 @@
 					]
 				}
 			},
-			"response": []
+			"response": {
+    				"message": "Subscribed Succesfully",
+   			        "subscribedCategories": [
+        				        "technology",
+       						"sports",
+    				]
+			}
 		},
 		{
 			"name": "unsubscribe",
@@ -128,7 +149,9 @@
 					]
 				}
 			},
-			"response": []
+			"response": {
+				"message":"Unsubscribed Successfully"
+			}
 		},
 		{
 			"name": "personalized",
@@ -153,7 +176,518 @@
 					]
 				}
 			},
-			"response": []
+			"response": {
+    "message": "Personalized News Fetched",
+    "articles": [
+        {
+            "source": {
+                "id": "the-washington-post",
+                "name": "The Washington Post"
+            },
+            "author": "Caroline O'Donovan",
+            "title": "Amazon’s AI-powered Alexa Plus to cost non-Prime users $20 a month - The Washington Post",
+            "description": "The revamped voice assistant, which will launch in waves starting next month, will be free for Prime members.",
+            "url": "https://www.washingtonpost.com/technology/2025/02/26/alexa-ai-amazon/",
+            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/EZILIMVUCBU55KMPPRQKTMSK2Y.JPG&w=1440",
+            "publishedAt": "2025-02-27T02:02:26Z",
+            "content": "NEW YORK The much-anticipated, top-secret name for Amazons new voice assistant proved to be almost the same as the old one just with a plus sign added.\r\nAt a swank event for journalists and Amazon em… [+3041 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Rebecca Szkutak",
+            "title": "Lonestar and Phison’s data center infrastructure is headed to the moon - TechCrunch",
+            "description": "The companies are sending the infrastructure needed to build out a data center with the goal of growing its capacity to a petabyte in the future.",
+            "url": "https://techcrunch.com/2025/02/26/lonestar-and-phisons-data-center-infrastructure-is-headed-to-the-moon/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-1251231130.jpg?resize=1200,800",
+            "publishedAt": "2025-02-27T00:56:01Z",
+            "content": "Data storage and resilience company Lonestar and semiconductor and storage company Phison launched a data center infrastructure on a SpaceX rocket on Wednesday that’s headed to the moon.\r\nThe compani… [+3472 chars]"
+        },
+        {
+            "source": {
+                "id": "ars-technica",
+                "name": "Ars Technica"
+            },
+            "author": "Ryan Whitwam",
+            "title": "Pixel Watch 3 gets FDA approval to alert you if you’re dying - Ars Technica",
+            "description": "But you’ll have to wait a bit longer to turn the feature on.",
+            "url": "https://arstechnica.com/gadgets/2025/02/pixel-watch-3-gets-fda-approval-to-alert-you-if-youre-dying/",
+            "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2025/02/google-pixel-watch-3-lifestyle-1152x648-1740602081.jpg",
+            "publishedAt": "2025-02-26T21:35:51Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cartoon Brew"
+            },
+            "author": "Amid Amidi",
+            "title": "Warner Bros. Games Shuts Down Three Studios, Including ‘Multiversus’ Developer - Cartoon Brew",
+            "description": "The three companies being shuttered are Monolith Productions, Player First Games, and Warner Bros.",
+            "url": "https://www.cartoonbrew.com/business/warner-bros-games-shuts-down-three-studios-including-multiversus-developer-246094.html",
+            "urlToImage": "https://www.cartoonbrew.com/wp-content/uploads/2025/02/multiversus_wbd.jpg",
+            "publishedAt": "2025-02-26T21:08:34Z",
+            "content": "The bad news continues this week for animation, vfx, and video game studios. Just one day after Technicolor and its various studios imploded and Montreals On Animation Studios shut down, Warner Bros.… [+2047 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MacRumors"
+            },
+            "author": "Joe Rossignol",
+            "title": "Apple Says Its 5G Modem Will Come to More Devices, Here's Which Ones - MacRumors",
+            "description": "The new iPhone 16e is equipped with Apple's custom-designed C1 modem for 5G and LTE connectivity, whereas all other current iPhone models rely on...",
+            "url": "https://www.macrumors.com/2025/02/26/future-devices-with-apple-5g-modem/",
+            "urlToImage": "https://images.macrumors.com/t/EkjTVJZYdYPl0hMzUeKzRfGotas=/1600x/article-new/2025/02/apple-c1.jpg",
+            "publishedAt": "2025-02-26T20:31:54Z",
+            "content": "The new iPhone 16e is equipped with Apple's custom-designed C1 modem for 5G and LTE connectivity, whereas all other current iPhone models rely on Qualcomm modems. While the average customer is unlike… [+3490 chars]"
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": null,
+            "title": "Apple will fix iPhone glitch that suggests replacing the word ‘racist’ with ‘Trump’ - The Associated Press",
+            "description": "Apple says it’s fixing a bug with its dictation feature on some iPhones that briefly suggests the word “Trump” when a word with an R consonant is spoken, including “racist.” The company was responding to the controversy after some iPhone owners posted videos …",
+            "url": "https://apnews.com/article/apple-iphone-racist-trump-glitch-d80f88d69f6ceac585904f2faa2a9212",
+            "urlToImage": "https://dims.apnews.com/dims4/default/446d7d2/2147483647/strip/true/crop/5670x3189+0+295/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fe2%2F60%2F6d516d01f049dd181cde6cc8bf08%2F6e542dafd56943eabdbeab58de044e68",
+            "publishedAt": "2025-02-26T19:02:00Z",
+            "content": "LONDON (AP) Apple is fixing a bug within the dictation feature on some iPhones that briefly suggests the word Trump when a word with an R consonant is spoken, including racist. \r\nThe company is respo… [+1240 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Ivan Mehta",
+            "title": "ElevenLabs is launching its own speech-to-text model - TechCrunch",
+            "description": "ElevenLabs, an AI startup that just raised a $180 million mega-funding round, has been primarily known for its audio-generation prowess. The company took",
+            "url": "https://techcrunch.com/2025/02/26/elevenlabs-is-launching-its-own-speech-to-text-model/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2025/01/ElevenLabs-feat.jpg?resize=1200,669",
+            "publishedAt": "2025-02-26T18:00:00Z",
+            "content": "ElevenLabs, an AI startup that just raised a $180 million mega-funding round, has been primarily known for its audio-generation prowess. The company took a step in another technological direction by … [+2626 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "ZDNet"
+            },
+            "author": "Artie Beaty",
+            "title": "Google now lets you delete personal info directly from Search - here's how - ZDNet",
+            "description": "It's one of the simplest ways to remove your personal information online.",
+            "url": "https://www.zdnet.com/article/google-now-lets-you-delete-personal-info-directly-from-search-heres-how/",
+            "urlToImage": "https://www.zdnet.com/a/img/resize/ddced7b46b3f0e7b4b74531fabb943ba5bd07a8b/2025/02/26/ecabe26a-114c-4f56-a2ad-edc81105d89f/google-is-making-it-easier-to-remove-your-personal-information-from-search-heres-how.jpg?auto=webp&fit=crop&height=675&width=1200",
+            "publishedAt": "2025-02-26T17:35:00Z",
+            "content": "Google/ZDNET\r\nIf you find your personal information online, like your phone number, address, or email, Google is making it easier to make sure it doesn't show up again.\r\nAlso: Google Lens adds a cool… [+1888 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Nintendoeverything.com"
+            },
+            "author": "Brian",
+            "title": "Hiroyuki Sawano composed new music for Xenoblade Chronicle X: Definitive Edition - Nintendo Everything",
+            "description": "Nintendo announces that Hiroyuki Sawano, famous for his anime work, is back for new Xenoblade Chronicle X: Definitive Edition music.",
+            "url": "https://nintendoeverything.com/hiroyuki-sawano-composed-new-music-for-xenoblade-chronicle-x-definitive-edition/",
+            "urlToImage": "https://nintendoeverything.com/wp-content/uploads/Hiroyuki-Sawano-Xenoblade-Chronicle-X-Definitive-Edition.jpg",
+            "publishedAt": "2025-02-26T15:18:32Z",
+            "content": "Hiroyuki Sawano is back on board to create new music for Xenoblade Chronicle X: Definitive Edition. That news was confirmed on social media, and more specifically, the series’ official X account.\r\nSa… [+990 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Videocardz.com"
+            },
+            "author": null,
+            "title": "MicroCenter lists Radeon RX 9070 series: RX 9070 XT starting at $699, RX 9070 at $649 - VideoCardz.com",
+            "description": "AMD Radeon RX 9070 pricing on MicroCenter Are we getting closer to the final pricing for the AMD Radeon RX 9070 series? Perhaps, perhaps we are looking at placeholders that have not been confirmed by AMD or any board partner. There’s no doubt that some of the…",
+            "url": "https://videocardz.com/newz/microcenter-lists-radeon-rx-9070-series-rx-9070-xt-starting-at-699-rx-9070-at-649",
+            "urlToImage": "https://cdn.videocardz.com/1/2025/02/RADEON-RX-9070-XT-PULSE-HERO.jpg",
+            "publishedAt": "2025-02-26T15:15:00Z",
+            "content": "Please note that this post is tagged as a rumor\r\n.\r\nAre we getting closer to the final pricing for the AMD Radeon RX 9070 series? Perhaps, perhaps we are looking at placeholders that have not been co… [+1613 chars]"
+        },
+        {
+            "source": {
+                "id": "ign",
+                "name": "IGN"
+            },
+            "author": "Wesley Yin-Poole",
+            "title": "Monster Hunter Wilds Physical Copies Require a 15GB Update to Play, Capcom Says - IGN",
+            "description": "Physical copies of Monster Hunter Wilds require a 15GB update to play, Capcom has said.",
+            "url": "https://www.ign.com/articles/monster-hunter-wilds-physical-copies-require-a-15gb-update-to-play-capcom-says",
+            "urlToImage": "https://assets-prd.ignimgs.com/2024/05/30/monster-hunter-1717108611571.jpg?width=1280",
+            "publishedAt": "2025-02-26T15:09:38Z",
+            "content": "Physical copies of Monster Hunter Wilds require a 15GB update to play, Capcom has said.\r\nIf youve pre-ordered the digital version, you can download the latest update now so youre good to go when Mons… [+1210 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Disneydreamlightvalley.com"
+            },
+            "author": null,
+            "title": "Discover the Tales of Agrabah Update! - Disney Dreamlight Valley",
+            "description": "Disney Dreamlight Valley",
+            "url": "https://disneydreamlightvalley.com/en/news/TalesOfAgrabahUpdate",
+            "urlToImage": "https://ddv.assets.gameloft.com/assets/DDV_25074_S_UPD_15_Blog_Assets_A_01_OFF_01_FB_LS_473x271_EN_41d42ee8e5.png",
+            "publishedAt": "2025-02-26T13:55:04Z",
+            "content": "Hey Valley Villagers!\r\nDisney Dreamlight Valleys first update of 2025, Tales of Agrabah, is now LIVE on all platforms! Swap out your winter sweaters for cooler wear, don your most stylish... or sneak… [+4988 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gamingbible.com"
+            },
+            "author": "Angharad Redden",
+            "title": "Xbox quietly launching next-gen console sooner than we imagined - GAMINGbible",
+            "description": "Reports reveal that development on the next-gen Xbox console is not going well.",
+            "url": "https://www.gamingbible.com/news/platform/xbox/xbox-launching-next-gen-console-sooner-457592-20250226",
+            "urlToImage": "https://images.ladbible.com/ogimage/v3/assets/bltbc1876152fcd9f07/blt5f1cd203005d5226/67bf07f465459e5d31206f5f/xbox_(1).png",
+            "publishedAt": "2025-02-26T12:25:59Z",
+            "content": "Despite it seeming as though the Xbox Series X and Xbox Series S were just released, talk has already turned to Microsofts next-gen console, much to fans dismay.\r\nAlthough not yet confirmed, reports … [+2071 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Tipranks.com"
+            },
+            "author": "Gabe Ross",
+            "title": "‘Explosive Surge on the Horizon,’ Says Investor About Microsoft Stock - TipRanks",
+            "description": "Microsoft (NASDAQ:MSFT) shared some big news earlier this month when it announced the development of its Majorana 1 quantum chip. Majorana represents a significant ...",
+            "url": "https://www.tipranks.com/news/explosive-surge-on-the-horizon-says-investor-about-microsoft-stock",
+            "urlToImage": "https://blog.tipranks.com/wp-content/uploads/2025/02/shutterstock_2495145149-2-750x406.jpg",
+            "publishedAt": "2025-02-26T11:59:15Z",
+            "content": "Microsoft (NASDAQ:MSFT) shared some big news earlier this month when it announced the development of its Majorana 1 quantum chip. Majorana represents a significant improvement in the abilities of qua… [+2718 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Romain Dillet",
+            "title": "Framework’s first desktop PC is optimized for gaming and local AI inference - TechCrunch",
+            "description": "Framework, the company that is better known for its modular, repairable laptops, just released its first desktop computer. It’s a small desktop PC that",
+            "url": "https://techcrunch.com/2025/02/26/frameworks-first-desktop-pc-is-ready-for-gaming-and-local-ai-inference/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2025/02/Framework-Desktop-1.jpg?resize=1200,875",
+            "publishedAt": "2025-02-26T11:33:12Z",
+            "content": "Framework, the company that is better known for its modular, repairable laptops, just released its first desktop computer. Its a small desktop PC that punches above its weight.\r\nThe most interesting … [+3265 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BleepingComputer"
+            },
+            "author": "Sergiu Gatlan",
+            "title": "Windows 11 KB5052093 update released with 33 changes and fixes - BleepingComputer",
+            "description": "Microsoft has released the February 2025 preview cumulative update for Windows 11 24H2, with 33 improvements and fixes for multiple issues, including SSH and File Explorer bugs and the volume jumping to 100% when waking the PC from sleep.",
+            "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5052093-update-released-with-33-changes-and-fixes/",
+            "urlToImage": "https://www.bleepstatic.com/content/hl-images/2024/07/18/Windows--11.jpg",
+            "publishedAt": "2025-02-26T06:43:34Z",
+            "content": "Microsoft has released the February 2025 preview cumulative update for Windows 11 24H2, with 33 improvements and fixes for multiple issues, including SSH and File Explorer bugs and the volume jumping… [+2986 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Dexerto"
+            },
+            "author": "Dylan Horetski",
+            "title": "AI chatbots stun the internet after switching to computer language mid-conversation - Dexerto",
+            "description": "Users were left shocked after a video of two AI chatbots speaking to each other in another language went viral across social media.",
+            "url": "https://www.dexerto.com/entertainment/ai-chatbots-stun-the-internet-after-switching-to-computer-language-mid-conversation-3145796/",
+            "urlToImage": "https://www.dexerto.com/cdn-image/wp-content/uploads/2025/02/25/AI-Chatbots.jpg",
+            "publishedAt": "2025-02-26T00:39:18Z",
+            "content": "Users were left shocked after a video of two AI chatbots speaking with each other went viral across social media. \r\nEver since the rise of AI chatbots like ChatGPT, Google Gemini and others, netizens… [+1623 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5google.com"
+            },
+            "author": "Ben Schoon",
+            "title": "Adobe Photoshop app is coming to Android ‘soon’ as it debuts on the web and for iPhone - 9to5Google",
+            "description": "As it debuts on iPhone and the web, Adobe has confirmed a new Photoshop app is coming to Android \"soon,\" but with no further details.",
+            "url": "http://9to5google.com/2025/02/25/adobe-photoshop-android-app-coming-soon/",
+            "urlToImage": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2025/02/photoshop-web-iphone-apps-2.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-02-25T18:40:00Z",
+            "content": "Adobe has just announced new Photoshop apps for the web and for iPhone, and it will also be coming to Android “soon.”\r\nPhotoshop is the photo-editing app, to the point where it’s often used as a verb… [+2439 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Tom Warren",
+            "title": "Microsoft makes Copilot Voice and Think Deeper free with unlimited use - The Verge",
+            "description": "Microsoft is making OpenAI’s o1 reasoning model free with unlimited use in Copilot. It’s also providing unlimited voice use to all Copilot users.",
+            "url": "https://www.theverge.com/news/619199/microsoft-copilot-free-unlimited-voice-think-deeper-open-ai-o1-reasoning-model-ai",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/Slide-16x9-full-design.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+            "publishedAt": "2025-02-25T17:53:48Z",
+            "content": "You wont hit any limits using OpenAIs o1 reasoning model inside Copilot anymore.\r\nYou wont hit any limits using OpenAIs o1 reasoning model inside Copilot anymore.\r\nMicrosoft made OpenAIs o1 reasoning… [+1313 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "NBCSports.com"
+            },
+            "author": "Mike Florio",
+            "title": "Tom Brady’s agent calls dubs report of Matthew Stafford visit “inaccurate” - NBC Sports",
+            "description": "With the Raiders in a potential tampering jackpot, Don Yee issues predictable denial.",
+            "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tom-bradys-agent-calls-dubs-report-of-matthew-stafford-visit-inaccurate",
+            "urlToImage": "https://nbcsports.brightspotcdn.com/dims4/default/2ad92b8/2147483647/strip/true/crop/5505x3097+0+287/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fd0%2F73%2F03641dc84ee6aff649b4c679a407%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2198051799",
+            "publishedAt": "2025-02-27T04:35:46Z",
+            "content": "The biggest story, so far, of the Scouting Combine has a straight-line connection to the competing reports regarding whether and to what extent the Raiders interest in Rams quarterback Matthew Staffo… [+3032 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "New York Post"
+            },
+            "author": "Zach Braziller",
+            "title": "No. 7 St. John’s clinches at least share of Big East title for first time since 1991-92 with win over Butler - New York Post ",
+            "description": "Now, after this gritty 76-70 victory at Hinkle Fieldhouse, St. John’s can clinch the program’s first outright league title since 1985 Saturday against Seton Hall.",
+            "url": "https://nypost.com/2025/02/26/sports/no-7-st-johns-survives-butler-scare-to-clinch-at-least-share-of-big-east-regular-season-crown/",
+            "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2025/02/st-johns-red-storm-guard-99325991.jpg?quality=75&strip=all&w=1024",
+            "publishedAt": "2025-02-27T04:33:00Z",
+            "content": "INDIANAPOLIS It was expected that it would be ugly.\r\nA rock fight. A struggle.\r\nSo much of St. Johns success this year has been built on its ability to win that way. To prevail despite so much going … [+3220 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "SwimSwam"
+            },
+            "author": "Braden Keith",
+            "title": "Indiana Breaks Big Ten Record in the 200 Medley Relay to Open Championship Meet - SwimSwam",
+            "description": "The Indiana Hoosiers replaced three out of four swimmers on their 200 medley from last year's Big Ten Championships - and got much faster on Wednesday.",
+            "url": "https://swimswam.com/indiana-breaks-big-ten-record-in-the-200-medley-relay-to-open-championship-meet/",
+            "urlToImage": "https://swimswam.com/wp-content/uploads/2025/02/Indiana-Matt-King-Swim.webp?1740639100",
+            "publishedAt": "2025-02-27T03:24:20Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "New York Post"
+            },
+            "author": "Christian Arnold",
+            "title": "Justin Tucker, wife further deny ‘shocking’ sexual misconduct allegations against Ravens kicker - New York Post ",
+            "description": "Justin Tucker continued to maintain his innocence as the spotlight remained on his alleged sexual misconduct this week.",
+            "url": "https://nypost.com/2025/02/26/sports/justin-tucker-wife-deny-sexual-misconduct-allegations-against-kicker/",
+            "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2025/02/justin-tucker.jpg?quality=75&strip=all&1740613933&w=1024",
+            "publishedAt": "2025-02-27T02:53:00Z",
+            "content": "Justin Tucker continued to maintain his innocence as the spotlight remained on his alleged sexual misconduct this week after Ravens general manager Eric DeCosta addressed the matter at the NFL combin… [+3816 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "Ryan Young",
+            "title": "Portland's Shaedon Sharpe enters Dunk of the Year territory with wild one-handed slam over Justin Champagnie - Yahoo Sports",
+            "description": "Shaedon Sharpe threw down a ridiculous poster on Wednesday night in Washington.",
+            "url": "https://sports.yahoo.com/nba/article/portlands-shaedon-sharpe-enters-dunk-of-the-year-territory-with-wild-one-handed-slam-over-justin-champagnie-012053990.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/Q2hoL6LEUCeVh1ua6Ar5Uw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-02/e89e6930-f4ad-11ef-bff7-bde89af4f68a",
+            "publishedAt": "2025-02-27T02:48:00Z",
+            "content": "Shaedon Sharpe pulled out a ridiculous poster on Wednesday night in Washington.\r\nSharpe, in the second quarter of the Portland Trail Blazers' 129-121 win over the Wizards at Capital One Arena, easily… [+1444 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "U.S. Soccer"
+            },
+            "author": null,
+            "title": "USWNT vs. Japan: Starting XI & Lineup Notes - U.S. Soccer",
+            "description": "Starting XI vs. Japan: 1-Jane Campbell, 4-Tara McKeown, 9-Ally Sentnor, 10-Lindsey Heaps (Capt.), 11-Lily Yohannes, 14-Emily Sonnett, 17-Sam Coffey, 19-Crystal Dunn, 20-Catarina Macario, 22-Yazmeen Ryan, 23-Emily Fox",
+            "url": "https://www.ussoccer.com/stories/2025/02/us-womens-national-team-vs-japan-usa-lineup-today-starting-11-lineup-notes",
+            "urlToImage": "https://cdn.sanity.io/images/oyf3dba6/production/7f86f9ba3c540a85782194923b22e10c338232a5-1800x1223.jpg",
+            "publishedAt": "2025-02-27T02:38:15Z",
+            "content": "USWNT vs. Japan 2025 SheBelieves Cup, presented by VisaDate: February 26, 2025Venue: Snapdragon Stadium; San DiegoBroadcast: TBS, Universo, Max, PeacockRadio: Westwood One SportsOfficial Kickoff Time… [+3306 chars]"
+        },
+        {
+            "source": {
+                "id": "bleacher-report",
+                "name": "Bleacher Report"
+            },
+            "author": "Julia Stumbaugh",
+            "title": "Dodgers' Shohei Ohtani to Play vs. Angels in 2025 MLB Spring Training Debut - Bleacher Report",
+            "description": null,
+            "url": "https://bleacherreport.com/articles/25164844-dodgers-shohei-ohtani-play-vs-angels-2025-mlb-spring-training-debut",
+            "urlToImage": "https://gsp-image-cdn.wmsports.io/cms/prod/bleacher-report/getty_images/2201320548_large_image_0.jpg",
+            "publishedAt": "2025-02-27T00:00:00Z",
+            "content": "Los Angeles Dodgers star Shohei Ohtani will make his first spring training appearance of the 2025 season against his former team.\r\nOhtani will play as designated hitter during Friday night's game aga… [+1703 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MMA Fighting"
+            },
+            "author": "Damon Martin",
+            "title": "UFC owners ‘close on an agreement’ with Saudi Arabia to launch new boxing league - MMA Fighting",
+            "description": "The UFC owners at TKO Group Holdings are nearing a deal with Saudi Arabia to launch a new boxing league in 2025 with the possibility of four cards over the next two years with “superfights” that would likely feature some of the biggest names in the sport.",
+            "url": "https://www.mmafighting.com/2025/2/26/24373828/ufc-owners-close-on-an-agreement-with-saudi-arabia-to-launch-new-boxing-league",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/5fXwm9AmHsAwa4RTf6KEf-B4Uy4=/0x0:4977x2606/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25889769/2197919713.jpg",
+            "publishedAt": "2025-02-27T00:00:00Z",
+            "content": "The UFC owners at TKO Group Holdings are nearing a deal to launch a new boxing league in 2025.\r\nOn Wednesday during a financial call with investors, TKO president and chief operating officer Mark Sha… [+6555 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "On3.com"
+            },
+            "author": "Nick Schultz",
+            "title": "Tyrese Proctor injury update: Jon Scheyer shares promising news on Duke guard - On3.com",
+            "description": ".",
+            "url": "https://www.on3.com/college/duke-blue-devils/news/tyrese-proctor-injury-update-jon-scheyer-shares-promising-news-duke-guard-status/",
+            "urlToImage": "https://on3static.com/uploads/dev/assets/cms/2023/07/12135254/Tyrese-Proctor.jpg",
+            "publishedAt": "2025-02-26T23:37:30Z",
+            "content": "Tyrese Proctor suffered a bone bruise in his knee during Tuesday nights game against Miami, Duke coach Jon Scheyer confirmed on his radio show Wednesday. He will also be back for the Blue Devils this… [+2111 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CBS Sports"
+            },
+            "author": "",
+            "title": "Will Travis Hunter play WR or CB? NFL teams weigh in on likely position for draft's potential No. 1 pick - CBS Sports",
+            "description": "One team would consider the two-way Colorado star playing both positions",
+            "url": "https://www.cbssports.com/nfl/news/will-travis-hunter-play-wr-or-cb-nfl-teams-weigh-in-on-likely-position-for-drafts-potential-no-1-pick/",
+            "urlToImage": "https://sportshub.cbsistatic.com/i/r/2025/02/24/206c593c-1e59-4ba4-92c3-c35d3ce8013f/thumbnail/1200x675/09ee1283023aab883468e64a09781d0b/gettyimages-2183921073-1.jpg",
+            "publishedAt": "2025-02-26T23:06:23Z",
+            "content": "One of the biggest questions from the NFL Scouting Combine is which position Travis Hunter will play at the next level. In addition to winning the Heisman Trophy in 2024, the former Colorado standout… [+2448 chars]"
+        },
+        {
+            "source": {
+                "id": "fox-sports",
+                "name": "Fox Sports"
+            },
+            "author": null,
+            "title": "NFL plans to replace chains with Hawk-Eye virtual measurement in 2025 - FOX Sports",
+            "description": "The NFL will use its Hawk-Eye virtual measurement system to determine first downs, though officials will still spot the ball.",
+            "url": "https://www.foxsports.com/stories/nfl/nfl-replace-chains-hawk-eye-virtual-measurement-2025",
+            "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2025/02/1408/814/6e20f6aa-nfl2.jpg?ve=1&tl=1",
+            "publishedAt": "2025-02-26T22:47:39Z",
+            "content": "The chain gang has been an essential part of the NFL game for as long as one can remember, but it's undergoing a change in 2025.\r\nBeginning next season, the NFL is expected to replace the chains whic… [+1556 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "This Is Anfield"
+            },
+            "author": "James Nalton",
+            "title": "Liverpool 2-0 Newcastle: 5 talking points as Szoboszlai thrives - This Is Anfield",
+            "description": "Read here.",
+            "url": "https://www.thisisanfield.com/2025/02/liverpool-2-0-newcastle-5-talking-points-as-szoboszlai-thrives-and-anfield-declares/",
+            "urlToImage": "https://www.thisisanfield.com/wp-content/uploads/2_R38143.jpg",
+            "publishedAt": "2025-02-26T22:46:21Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "NBCSports.com"
+            },
+            "author": "Nicholas Mendola",
+            "title": "Mikel Arteta reaction — Arsenal manager's bitter press conference sums up Gunners failures - NBC Sports",
+            "description": "Arsenal were shut out for the second-straight Premier League game, drawing 0-0 at Nottingham Forest as the Gunners attack continues to condemn their minimal title hopes.",
+            "url": "https://www.nbcsports.com/soccer/news/mikel-arteta-reaction-what-did-arsenal-manager-say-after-latest-bad-day-in-attack",
+            "urlToImage": "https://nbcsports.brightspotcdn.com/dims4/default/c43a785/2147483647/strip/true/crop/4576x2574+0+238/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F90%2F39%2F7000c3c246b185a16e4281c48dc5%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2202153157",
+            "publishedAt": "2025-02-26T22:30:00Z",
+            "content": "Arsenal were shut out for the second-straight Premier League game, drawing 0-0 at Nottingham Forest as the Gunners attack continues to condemn their minimal title hopes.\r\nMikel Arteta will have to an… [+2046 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Action Network"
+            },
+            "author": "Rolando Rosa",
+            "title": "Michigan State vs. Maryland Odds, Picks, Predictions — 2/26 - The Action Network",
+            "description": "Read for Michigan State vs Maryland odds, picks and predictions for their college basketball game on Wednesday, February 26.",
+            "url": "https://www.actionnetwork.com/ncaab/michigan-state-spartans-vs-maryland-terrapins-predictions-picks-odds-college-basketball-wednesday-february-26",
+            "urlToImage": "https://images.actionnetwork.com/blog/2025/02/Jaxson.jpg",
+            "publishedAt": "2025-02-26T22:21:00Z",
+            "content": "The Michigan State Spartans take on the Maryland Terrapins in College Park, MD. Tip-off is set for 6:30 p.m. ET on Big Ten Network.\r\nMaryland is favored by 4.5 points on the spread with a moneyline o… [+3169 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "cleveland.com"
+            },
+            "author": "Mary Kay Cabot, cleveland.com",
+            "title": "Hmm … maybe Myles Garrett and Kevin Stefanski are aligned on that Super Bowl thing afterall - cleveland.com",
+            "description": "Kevin Stefanski has the same Super Bowl goals as Myles Garrett.",
+            "url": "https://www.cleveland.com/browns/2025/02/hmm-maybe-myles-garrett-and-kevin-stefanski-are-aligned-on-that-super-bowl-thing-afterall.html",
+            "urlToImage": "https://www.cleveland.com/resizer/v2/O5Q4GKKCVBBWLDZYQFVQNXDZOI.jpg?auth=722d5dbe75779cdf9d2ef894176667400d0ffb15ba7f15d62f61fe9a87793aaf&width=1280&quality=90",
+            "publishedAt": "2025-02-26T22:16:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Thetimes-tribune.com"
+            },
+            "author": "Jeff Horvath",
+            "title": "McGloin resigns from Boston College job, citing unforeseen impact on family - Scranton Times-Tribune",
+            "description": "Former Lackawanna County Commissioner Matt McGloin reportedly resigned from the job with Boston College’s football program that he left county government Monday to take. Boston College head c…",
+            "url": "http://www.thetimes-tribune.com/2025/02/26/mcgloin-resigns-from-boston-college-offensive-analyst-job-bill-obrien-tells-espn/",
+            "urlToImage": "https://www.thetimes-tribune.com/wp-content/uploads/2025/02/STT-L-OYFS-1210-06-1.jpg?w=1024&h=682",
+            "publishedAt": "2025-02-26T21:56:15Z",
+            "content": "Former Democratic Lackawanna County Commissioner Matt McGloin resigned from the job with Boston College’s football program that he left county government Monday to take.\r\nBoston College head coach Bi… [+5248 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Football.London"
+            },
+            "author": "Alasdair Gold",
+            "title": "Tottenham player ratings vs Man City - Gray and Bergvall mature, Tel struggles, Porro problems - Football.London",
+            "description": "Here are our Tottenham Hotspur player ratings after their narrow defeat to Manchester City in the Premier League on Wednesday evening",
+            "url": "https://www.football.london/tottenham-hotspur-fc/fixtures-results/tottenham-player-ratings-vs-man-31089871",
+            "urlToImage": "https://i2-prod.football.london/incoming/article31090300.ece/ALTERNATES/s1200/0_GettyImages-2202154638.jpg",
+            "publishedAt": "2025-02-26T21:52:55Z",
+            "content": "Tottenham went down 1-0 to Manchester City in the Premier League on Wednesday evening and here are our player ratings from the match.\r\nSpurs had won 4-0 at the Etihad Stadium in November and overcame… [+3406 chars]"
+        },
+        {
+            "source": {
+                "id": "espn",
+                "name": "ESPN"
+            },
+            "author": "Jeff Carlisle",
+            "title": "Bay FC scout resigns amid past abuse allegations - ESPN",
+            "description": "Graeme Abel has resigned his position as Bay FC's director of domestic scouting for college and professional players, less than a week after he was named to the post.",
+            "url": "https://www.espn.com/soccer/story/_/id/44028020/bay-fc-scout-graeme-abel-resigns-abuse-allegations-nwsl",
+            "urlToImage": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0226%2Fr1456967_1296x729_16%2D9.jpg",
+            "publishedAt": "2025-02-26T21:27:00Z",
+            "content": "Graeme Abel has resigned his position as Bay FC's director of domestic scouting for college and professional players, less than a week after he was named to the post.\r\nThe move comes in the wake of a… [+4610 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Philliesnation.com"
+            },
+            "author": "Nathan Ackerman",
+            "title": "Bryce Harper exits after scary hit by pitch, but appears OK - Phillies Nation",
+            "description": "Consider disaster likely averted for Bryce Harper. The Phillies’ first baseman was hit by an errant Richard Lovelady sinker in the sixth inning of Wednesday’s Grapefruit League game against the Blue Jays in Dunedin. It was only 92 mph, but there was no gettin…",
+            "url": "https://www.philliesnation.com/2025/02/mlb-spring-training-philadelphia-phillies-news-bryce-harper-hit-by-pitch-richard-lovelady/",
+            "urlToImage": "https://www.philliesnation.com/wp-content/uploads/2024/10/24283840438832-scaled.jpg",
+            "publishedAt": "2025-02-26T21:16:45Z",
+            "content": "Consider disaster likely averted for Bryce Harper.\r\nThe Phillies’ first baseman was hit by an errant Richard Lovelady sinker in the sixth inning of Wednesday’s Grapefruit League game against the Blue… [+1202 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "NBCSports.com"
+            },
+            "author": "Josh Alper",
+            "title": "Mickey Loomis on Derek Carr: We feel we have a guy we can win with - NBC Sports",
+            "description": "When Kellen Moore held his introductory press conference a couple of weeks ago, he said he is \"really excited to team up\" with Derek Carr in his first season in New Orleans.",
+            "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mickey-loomis-on-derek-carr-we-feel-we-have-a-guy-we-can-win-with",
+            "urlToImage": "https://nbcsports.brightspotcdn.com/dims4/default/1668f97/2147483647/strip/true/crop/4429x2491+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F94%2Fa8%2F7bd4cb4142d6b54ee2cd29183ae3%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2189440179",
+            "publishedAt": "2025-02-26T20:35:14Z",
+            "content": "When Kellen Moore held his introductory press conference a couple of weeks ago, he said he is really excited to team up with Derek Carr in his first season in New Orleans.\r\nMoore stopped short of cal… [+661 chars]"
+        }
+    ]
+}
 		}
 	]
 }
